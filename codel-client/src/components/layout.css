@@ -1,0 +1,46 @@
+.lesson-panel {
+  padding: 10px 30px;
+  height: calc(100vh - 40px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+#learn-app-wrapper {
+  height: calc(100vh - 40px);
+}
+
+#learn-app-wrapper .reflex-container.vertical .reflex-splitter:hover {
+  border-left: 2px solid #006400;
+  border-right: 2px solid #006400;
+  background-color: #006400;
+}
+
+#learn-app-wrapper .reflex-container.vertical > .reflex-splitter {
+  width: 5px;
+}
+
+#learn-app-wrapper .reflex-container.horizontal .reflex-splitter:hover {
+  border-top: 2px solid #006400;
+  border-bottom: 2px solid #006400;
+  background-color: #006400;
+}
+
+#learn-app-wrapper .reflex-container.horizontal > .reflex-splitter {
+  height: 5px;
+}
+
+.spacer {
+  height: 10px;
+}
+
+.course-card {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.col .progress {
+  height: 100%;
+}

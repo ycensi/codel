@@ -1,0 +1,11 @@
+{
+    "eslint.packageManager": "yarn",
+    "eslint.run": "onType",
+    "eslint.alwaysShowStatus": true,
+    "eslint.autoFixOnSave": true,
+    "javascript.validate.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // "javascript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "jshint.enable": false
+}
