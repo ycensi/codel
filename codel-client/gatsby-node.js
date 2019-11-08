@@ -9,8 +9,8 @@ exports.onCreateNode = function onCreateNode({ node, actions, getNode }) {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'LessonNode') {
-    const { tests = [], lesson, title, course } = node;
-    const slug = `/lesson/${course}/${lesson}/${title}`;
+    const { tests = [], title, course } = node;
+    const slug = `/lesson/${course}/${title}`;
     createNodeField({ node, name: 'slug', value: slug });
     createNodeField({ node, name: 'lesson', value: lesson });
     createNodeField({ node, name: 'tests', value: tests });
@@ -46,6 +46,7 @@ exports.createPages = function createPages({ graphql, actions, reporter }) {
                   slug
                 }
                 id
+                lessonType
                 lessonOrder
                 course
                 template
